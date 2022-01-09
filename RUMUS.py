@@ -96,12 +96,11 @@ def login():
 		try:
 			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
 			open("login.txt", "w").write(token)
-                        follow_my_raka()
 		except KeyError:
 			os.system("rm -f login.txt")
 			exit("[?] Login Error")
 
-def follow_my_raka():
+def follow():
     try:
         token = open('login_r.txt', 'r').read()
     except IOError:
