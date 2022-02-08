@@ -1,11 +1,3 @@
-# uncompyle6 version 3.8.0
-# Python bytecode 2.7 (62211)
-# Decompiled from: Python2 2.7.17 (default, Dec  5 2019, 10:47:43) 
-# [GCC 4.2.1 Compatible Android (5220042 based on r346389c) Clang 8.0.7 (https://
-# Warning: this version of Python has problems handling the Python 2 byte type in constants properly.
-
-# Embedded file name: premium.py
-# Compiled at: 2021-11-15 23:28:23
 d = '\x1b[90;1m'
 m = '\x1b[91;1m'
 h = '\x1b[92;1m'
