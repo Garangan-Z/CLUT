@@ -121,7 +121,6 @@ youtuber = subrek
 def login():
     global token
     os.system("clear");print(banner)
-    print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
     print(" %s[%s1%s] Login via token\n%s [%s2%s] Login via cookie"%(p,b,p,p,b,p))
     pil_log=raw_input("\n%s [%s•%s] Choose: "%(p,b,p))
     if pil_log in ["1","01"]:
