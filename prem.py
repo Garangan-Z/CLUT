@@ -1,7 +1,7 @@
 #coding=utf-8
 
 import requests,bs4,sys,os,random,time,re,json
-import calendar,raka,prem
+import calendar,speed,prem
 from datetime import datetime
 from datetime import date 
 from concurrent.futures import ThreadPoolExecutor
