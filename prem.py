@@ -21,7 +21,7 @@ Massage_Author = """
 
 
 import requests,bs4,sys,os,random,time,re,json
-import calendar,deku,orbxd
+import calendar,deku,prem
 from datetime import datetime
 from datetime import date 
 from concurrent.futures import ThreadPoolExecutor
