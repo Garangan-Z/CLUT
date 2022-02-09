@@ -131,7 +131,7 @@ def login():
 
 
 def update():
-    print("\n %s[%s!%s] Menu Dalam Proses Update Login Via Token!"%(p,m,p));time.sleep(00.01);login()
+    print("\n %s[%s!%s] Menu Dalam Proses Update Login Via Token!"%(p,m,p));time.sleep(3);login()
 
 
 def log_token():
