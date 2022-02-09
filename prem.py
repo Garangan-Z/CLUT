@@ -344,7 +344,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(api, uid, asu)
@@ -352,7 +352,7 @@ def dekura_x():
 		elif bukanmaen in ["d","D"]:
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -375,7 +375,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(mbasic, uid, asu)
@@ -383,7 +383,7 @@ def dekura_x():
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=35) as coeg:
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -406,7 +406,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(freefb, uid, asu)
@@ -414,7 +414,7 @@ def dekura_x():
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!"%(p,b,p))
+				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
