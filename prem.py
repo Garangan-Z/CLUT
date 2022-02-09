@@ -131,7 +131,7 @@ def login():
 
 
 def update():
-    jalan("\n %s[%s!%s] Menu Dalam Proses Update Login Via Token!"%(p,m,p));time.sleep(3);login()
+    jalan("\n %s[%s!%s] Menu Dalam Proses Update Login Via Token..."%(p,m,p));time.sleep(3);login()
 
 
 def log_token():
@@ -140,7 +140,7 @@ def log_token():
     convert=raw_input("%s [%s•%s] Token : "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
-        print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel..."%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
+        print("\n %s[%s•%s] Login berhasil..."%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel..."%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
     except KeyError:
         print("\n %s[%s!%s] Token invalid!"%(p,m,p));time.sleep(1);login()
 
@@ -172,7 +172,7 @@ def cookie():
 	cookie = open("login.txt", 'w')
 	cookie.write(find_token.group(1))
 	cookie.close()
-	print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
+	print("\n %s[%s•%s] Login berhasil..."%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
 def menu():
     try:
         token = open("login.txt","r").read()
@@ -341,7 +341,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(api, uid, asu)
@@ -349,7 +349,7 @@ def dekura_x():
 		elif bukanmaen in ["d","D"]:
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -372,7 +372,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(mbasic, uid, asu)
@@ -380,7 +380,7 @@ def dekura_x():
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=35) as coeg:
 				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -403,7 +403,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(freefb, uid, asu)
@@ -411,7 +411,7 @@ def dekura_x():
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 2 Detik Jika Tak Ada Hasil...\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
