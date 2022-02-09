@@ -122,7 +122,7 @@ def login():
     global token
     os.system("clear");print(banner)
     print(" %s[%s1%s] Login Token Facebook\n%s [%s2%s] Login Cookie Facebook"%(p,b,p,p,b,p))
-    pil_log=raw_input("\n%s [%s•%s] Choose: "%(p,b,p))
+    pil_log=raw_input("\n%s [%s•%s] Choose : "%(p,b,p))
     if pil_log in ["1","01"]:
         log_token()
     elif pil_log in ["2","02"]:
@@ -133,20 +133,17 @@ def login():
 def log_token():
     global token
     os.system("clear");print(logo)
-    convert=raw_input("%s [%s•%s] Token: "%(p,b,p))
+    convert=raw_input("%s [%s•%s] Token : "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
         print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
     except KeyError:
         print("\n %s[%s!%s] Token invalid!"%(p,m,p));time.sleep(1);login()
 
-def update():
-    print("\n %s[%s!%s] Menu sedang di update coeg!"%(p,m,p));time.sleep(1);login()
-
 def cookie():
 	update()
 	os.system('clear');print(logo)
-	cookie = raw_input("\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m] Cookie: ")
+	cookie = raw_input("%s [%s•%s] Cookie : "%(p,b,p))
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
 		'user-agent'                : 'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36', # Jangan Di Ganti Ea Anjink.
@@ -196,7 +193,7 @@ def menu():
     print("%s [%s7%s] Setting Useragent"%(p,b,p))
     print("%s [%s8%s] Cek Hasil Crack Ok-Cp"%(p,b,p))
     print("%s [%s0%s] Logout"%(p,b,p))
-    pill = raw_input("\n%s [%s•%s] Choose: "%(p,b,p))
+    pill = raw_input("\n%s [%s•%s] Choose : "%(p,b,p))
     if pill in ["1","01"]:
         teman()
         dekura_x()
@@ -329,7 +326,7 @@ def dekura_x():
 	print("%s [%s1%s] Methode B-api (%sCepat%s)"%(p,b,p,b,p))
 	print("%s [%s2%s] Methode Mbasic (%sSlow Rekomend%s)"%(p,b,p,b,p))
 	print("%s [%s3%s] Methode Mobile (%sSlow%s\n)"%(p,b,p,b,p))
-	dekurasayangara = raw_input("%s [%s•%s] Choose: "%(p,b,p))
+	dekurasayangara = raw_input("%s [%s•%s] Choose : "%(p,b,p))
 	if dekurasayangara in [""]:
 		exit("\n%s [%s!%s] Pilihan tidak boleh kosong!"%(p,m,p))
 	elif dekurasayangara in ["1","01"]:
