@@ -102,7 +102,7 @@ logo = ("""\033[1;36m
 \x1b[1;97m Desigen By  : \x1b[1;92mRaka Andrian Tara
 \x1b[1;97m Github      : \x1b[1;92mBajingan-Z
 \x1b[1;97m Coded By    : \x1b[1;92mRaka \x1b[1;97m& \x1b[1;32mAngga
-\x1b[1;92m_______________________________________________________\x1b[1;97m            \n""")        
+\x1b[1;92m_______________________________________________________\x1b[1;97m            """)        
 
 def clear():
 	if " linux" in sys.platform.lower():
@@ -121,7 +121,7 @@ youtuber = subrek
 def login():
     global token
     os.system("clear");print(banner)
-    print("\033[1;96m"+50*"-")
+    print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
     print(" %s[%s1%s] Login via token\n%s [%s2%s] Login via cookie"%(p,b,p,p,b,p))
     pil_log=raw_input("\n%s [%s•%s] Choose: "%(p,b,p))
     if pil_log in ["1","01"]:
@@ -134,7 +134,7 @@ def login():
 def log_token():
     global token
     os.system("clear");print(logo)
-    print("\033[1;96m"+50*"-")
+    print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
     convert=raw_input("%s [%s•%s] Token: "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
@@ -148,7 +148,7 @@ def update():
 def cookie():
 	update()
 	os.system('clear');print(logo)
-	print("\033[0;96m"+50*"-")
+	print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
 	cookie = raw_input("\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m] Cookie: ")
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
@@ -188,9 +188,8 @@ def menu():
     except Exception as e:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
     os.system("clear");print(logo)
-    print("\033[1;96m"+50*"-")
     print("%s [%s•%s] Name      : %s "%(p,b,p,nick));print("%s [%s•%s] Usert ID   : %s "%(p,b,p,idme));print("%s [%s•%s] Tanggal Lahir : %s %s %s"%(p,b,p,day,month,year))
-    print("\033[1;96m"+50*"-")
+    print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
     print("\n%s [%s1%s] Crack Dari Teman Sendiri "%(p,b,p))
     print("%s [%s2%s] Crack Dari Teman Publik "%(p,b,p))
     print("%s [%s3%s] Crack Dari follower Publik "%(p,b,p))
