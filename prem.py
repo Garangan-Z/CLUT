@@ -326,7 +326,7 @@ def massal():
 		print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 def dekura_x():
-	print("%s\n (%sSilahkan Dicoba Satu Satu BozZ%s)%s"%(p,b,p,b))
+	print("%s\n        ══━──⋆✥⋆%sSilahkan Dicoba Satu Satu BozZ%s⋆✥⋆──━════%s\n"%(b,p,b,p))
 	print("%s [%s1%s] Methode B-api (%sCepat%s)"%(p,b,p,b,p))
 	print("%s [%s2%s] Methode Mbasic (%sSlow Rekomend%s)"%(p,b,p,b,p))
 	print("%s [%s3%s] Methode Mobile (%sSuper Slow%s)\n"%(p,b,p,b,p))
