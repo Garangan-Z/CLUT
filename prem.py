@@ -269,7 +269,7 @@ def followers():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target : "%(p,b,p,b,p))
     try:
         for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=20000&access_token=%s"%(idt,token)).json()["data"]:
             idne = i['id']
@@ -288,7 +288,7 @@ def likes():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("%s [%s•%s] Masukan Id Postingan\n [%s•%s] ID Post Target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Postingan\n [%s•%s] ID Post Target : "%(p,b,p,b,p))
     try:
         for i in requests.get("https://graph.facebook.com/%s/likes?limit=100000&access_token=%s"%(idt,token)).json()["data"]:
             idne = i['id']
@@ -308,11 +308,11 @@ def massal():
 	except IOError:
 		print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
 	try:
-		tanya_total = int(raw_input("\n%s [%s•%s] Jumlah massal: "%(p,b,p)))
+		tanya_total = int(raw_input("\n%s [%s•%s] Jumlah Massal : "%(p,b,p)))
 	except:tanya_total=1
 	for t in range(tanya_total):
 		t +=1
-		idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target%s: "%(p,b,p,b,p,t))
+		idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target%s : "%(p,b,p,b,p,t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				idne = i["id"]
@@ -326,10 +326,10 @@ def massal():
 		print("\n%s [%s•%s] Total Id : %s"%(p,b,p,(len(id))))
 
 def dekura_x():
-	print("\n%s [%s Select methode crack %s]%s"%(b,p,b,p))
+	print("%s [%sSelect Methode Crack%s]%s\n"%(b,p,b,p))
 	print("%s [%s1%s] Methode B-api (%sCepat%s)"%(p,b,p,b,p))
 	print("%s [%s2%s] Methode Mbasic (%sSlow Rekomend%s)"%(p,b,p,b,p))
-	print("%s [%s3%s] Methode Mobile (%sSlow%s\n)"%(p,b,p,b,p))
+	print("%s [%s3%s] Methode Mobile (%sSuper Slow%s)\n"%(p,b,p,b,p))
 	dekurasayangara = raw_input("%s [%s•%s] Choose : "%(p,b,p))
 	if dekurasayangara in [""]:
 		exit("\n%s [%s!%s] Pilihan tidak boleh kosong!"%(p,m,p))
