@@ -130,6 +130,10 @@ def login():
     else:print("\n%s [%s!%s] Pilihan tidak ada!"%(p,m,p));time.sleep(1);login()
 
 
+def update():
+    print("\n %s[%s!%s] Menu Dalam Proses Update Login Via Token!"%(p,m,p));time.sleep(00.01);login()
+
+
 def log_token():
     global token
     os.system("clear");print(logo)
