@@ -133,7 +133,6 @@ def login():
 def log_token():
     global token
     os.system("clear");print(logo)
-    print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
     convert=raw_input("%s [%s•%s] Token: "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
@@ -147,7 +146,6 @@ def update():
 def cookie():
 	update()
 	os.system('clear');print(logo)
-	print("\x1b[1;92m_______________________________________________________\x1b[1;97m")
 	cookie = raw_input("\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m] Cookie: ")
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
