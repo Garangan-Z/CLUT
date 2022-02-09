@@ -249,7 +249,7 @@ def publik():
         token = open("login.txt", "r").read()
     except IOError:
         print ("\n %s[%s!%s] Token invalid"%(p,m,p));os.system("rm -rf login.txt");time.sleep(1);login()
-    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target: "%(p,b,p,b,p))
+    idt=raw_input("%s [%s•%s] Masukan Id Target\n [%s•%s] ID Target : "%(p,b,p,b,p))
     try:
         for i in requests.get('https://graph.facebook.com/%s/friends?access_token=%s'%(idt,token)).json()["data"]:
             idne = i['id']
