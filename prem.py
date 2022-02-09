@@ -1,27 +1,7 @@
 #coding=utf-8
 
-Massage_Author = """
-
-~~> Open Source Code Syarat? Subrek Channel Gua & Jangan Ganti Bot Follow! Cukup Tambahkan Bot Follow Sajah!
-
-~~> Ingat Ini Hanya Untuk Contoh Project!. Kalo Mau Recode, Recode Ajah Itung² Buat Latihan Lu
-
-~~> Kalo Mau Izin, Izin lewat instgrm/email/fb Ajah
-
-~~> insgrm : https://www.instagram.com/ngemry7
-
-~~> email  : xgansb@gmail.com
-
-~~> fb     : https://www.facebook.com/meyrina.setyaningrum
-
-~~> Maaf klo codinganya berantakan dan banyak bug:)
-
-"""
-
-
-
 import requests,bs4,sys,os,random,time,re,json
-import calendar,deku,prem
+import calendar,raka,prem
 from datetime import datetime
 from datetime import date 
 from concurrent.futures import ThreadPoolExecutor
@@ -138,7 +118,7 @@ def log_token():
     convert=raw_input("%s [%s•%s] Token: "%(p,b,p))
     try:
         saya=requests.get('https://graph.facebook.com/me?access_token=%s'%(convert));open("login.txt",'w').write(convert)
-        print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(deku.dekudesu())
+        print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
     except KeyError:
         print("\n %s[%s!%s] Token invalid!"%(p,m,p));time.sleep(1);login()
 
@@ -174,7 +154,7 @@ def cookie():
 	cookie = open("login.txt", 'w')
 	cookie.write(find_token.group(1))
 	cookie.close()
-	print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(deku.dekudesu())
+	print("\n %s[%s•%s] Login berhasil"%(p,b,p));jalan(" %s[%s•%s] Please Subscribe My Channel:)"%(p,b,p));os.system('xdg-open %s'%(youtuber));exit(raka.dekudesu())
 def menu():
     try:
         token = open("login.txt","r").read()
@@ -598,7 +578,7 @@ def mobile(uid, dekura):
 
 def hasil():
 	if len(ok) != 0 or len(cp) != 0:
-		exit(orbxd.awokawokaowkwoawkwowksheheheiwoansvdejeike_dekura_sayang())
+		exit(prem.awokawokaowkwoawkwowksheheheiwoansvdejeike_dekura_sayang())
 	else:
 		exit("\n%s [%s•%s] Lah? Kok Gak Dapat Hasil :v\n%s [%s!%s] Makanya Gans Biar Dapat Result :v"%(p,b,p,p,m,p))
 
